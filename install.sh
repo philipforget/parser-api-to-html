@@ -7,7 +7,7 @@ git clone git@github.com:philipforget/parser-api-to-html.git
 
 # Make yourself a ~/bin dir if you dont have it and add it to your path
 mkdir -p ~/bin
-echo "export PATH=~/bin:$PATH" >> ~/.bash_profile && source ~/.bash_profile
+echo 'export PATH=~/bin:$PATH' >> ~/.bash_profile && source ~/.bash_profile
 
 # Install the symlink
 cd ~/bin && ln -s "$REPO_ROOT/parser-api-to-html/parser.py" ~/bin/parse
