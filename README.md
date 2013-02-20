@@ -2,6 +2,13 @@ Python script to parse a url and output it to html
 
 
 ## Installation
+
+### Automatic installation
+```bash
+bash <(curl https://raw.github.com/philipforget/parser-api-to-html/master/install.sh)
+```
+
+### Custom installation
 ```bash
 # Clone the repo to where you like, I like a nice ~/workspace folder
 mkdir -p ~/workspace && cd ~/workspace
@@ -12,11 +19,14 @@ git clone https://github.com/philipforget/parser-api-to-html.git
 
 # Make yourself a ~/bin dir if you dont have it
 mkdir -p ~/bin
+# And add it to your $PATH
+export PATH=~/bin:$PATH
 
 # Install the symlink
 cd ~/bin && ln -s "$REPO_ROOT/parser-api-to-html/parser.py" ~/bin/parse
 # Make it executable 
 chmod +x ~/bin/parse
+
 ```
 
 
