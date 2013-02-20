@@ -70,8 +70,8 @@ if __name__ == '__main__':
             output_file = os.path.join(os.getcwd(), output_file)
 
         with open(output_file, 'w') as f:
-            f.write(parsed['content'])
+            f.write(parsed['content'].encode('utf-8'))
 
     else:
         # Write to stdout
-        sys.stdout.write(parsed['content'])
+        sys.stdout.write(parsed['content'].encode('utf-8'))
