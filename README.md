@@ -15,7 +15,7 @@ mkdir -p ~/workspace && cd ~/workspace
 
 # Make a note of the where we cloned to
 export REPO_ROOT=$(pwd)
-git clone https://github.com/philipforget/parser-api-to-html.git
+git clone git://github.com/philipforget/parser-api-to-html.git
 
 # Make yourself a ~/bin dir if you dont have it
 mkdir -p ~/bin
